@@ -1,9 +1,3 @@
-// Clone your repository
-git clone https://github.com/greycode02/MyFirstProject.git
-cd MyFirstProject
-
-// Create Jenkinsfile
-cat > Jenkinsfile << 'EOF'
 pipeline {
     agent any
     stages {
@@ -25,9 +19,3 @@ pipeline {
         }
     }
 }
-EOF
-
-// Add, commit, and push
-git add Jenkinsfile
-git commit -m "Add Jenkinsfile for CI/CD pipeline"
-git push origin main
